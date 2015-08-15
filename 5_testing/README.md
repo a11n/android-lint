@@ -2,7 +2,7 @@
 
 Testing is an important activity in software development. This counts in particular for custom Lint rules, since they validate your code for convention flaws and other defects.
 
-For a long time there exists no convenient way to test custom Lint rules. But fortunately 2015 Google released an [official library](https://bintray.com/android/android-tools/com.android.tools.lint.lint-tests/view) for testing custom Lint rules at end of May 2015. This version unfortunately had some [dependency issues](https://code.google.com/p/android/issues/detail?id=175161) which got fixed by version 24.3.0 at end of July 2015. **So please make sure to use this version or above.**
+For a long time there exists no convenient way to test custom Lint rules. But fortunately Google released an [official library](https://bintray.com/android/android-tools/com.android.tools.lint.lint-tests/view) for testing custom Lint rules at end of May 2015. This version unfortunately had some [dependency issues](https://code.google.com/p/android/issues/detail?id=175161) which got fixed by version 24.3.0 at end of July 2015. **So please make sure to use this version or above.**
 
 ##Test library dependency
 In order to use **lint-tests** library add the following lines to your `build.gradle`:
