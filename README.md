@@ -25,8 +25,8 @@ After the elaboration of the Lint API theory in [section 1](1_introduction/) and
 #### 4. Detectors
 This section demonstrates how to cope with `Detectors`. It showcases simple as well as advanced detecting techniques.
 
-#### 5. Testing
-This section presents how to test custom Lint rules.
+#### 5. Verification
+This section presents how to test and debug custom Lint rules.
 
 #### 6. Application
 This section elaborates options to apply your custom Android Lint rules to your Android application project.
