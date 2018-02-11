@@ -31,6 +31,15 @@ This section presents how to test and debug custom Lint rules.
 #### 6. [Application](6_application)
 This section elaborates options to apply your custom Android Lint rules to your Android application project.
 
+
+## Additional Resources
+If you are looking for more information on Lint the following resources can be helpful.
+
+1. [Android Docs on Lint](https://developer.android.com/studio/write/lint.html): Covers how to configure lint
+2. [Android's Conceptual Overview of Lint](http://tools.android.com/tips/lint/writing-a-lint-check): Covers the concepts of writing android lint rules.
+3. [A Presentation on Lint with Android](https://academy.realm.io/posts/360andev-matthew-compton-linty-fresh-java-android/): Presents is the same information as this guide, in video format.
+4. [Writing Lint Rules with Annotations](https://android.jlelse.eu/writing-custom-lint-rules-and-integrating-them-with-android-studio-inspections-or-carefulnow-c54d72f00d30): Walks you through writing a lint rule that enforces an annotation.
+
 ## Contributing
 Contribution to this guide is appreciated. Please refer to the [contribution guidelines](CONTRIBUTING.md) if you want to contribute something.
 
