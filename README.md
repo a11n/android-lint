@@ -13,22 +13,22 @@ This reference guide aims to fill this gap and provide essential knowledge on ho
 ## Structure
 The guide is structured into six consecutive sections.
 
-#### 1. Introduction
+#### 1. [Introduction](1_introduction)
 This section introduces into the domain of Android Lint. It briefly describes the purpose, usage and configuration of this tool.
 
-#### 2. Lint API basics
+#### 2. [Lint API basics](2_lint_api_basics)
 This section covers the basics of the Android Lint API. It explains the core concepts of the API, such as `Issues`, `Detectors`, `Scanners` and `IssueRegistry`.
 
-#### 3. Getting started
+#### 3. [Getting started](3_getting_started)
 After the elaboration of the Lint API theory in [section 1](1_introduction/) and [section 2](2_lint_api_basics/) this chapter provides practical explanations and code to get you started writing your own custom Android Lint rules.
 
-#### 4. Detectors
+#### 4. [Detectors](4_detectors)
 This section demonstrates how to cope with `Detectors`. It showcases simple as well as advanced detecting techniques.
 
-#### 5. Verification
+#### 5. [Verification](5_verification)
 This section presents how to test and debug custom Lint rules.
 
-#### 6. Application
+#### 6. [Application](6_application)
 This section elaborates options to apply your custom Android Lint rules to your Android application project.
 
 ## Contributing
