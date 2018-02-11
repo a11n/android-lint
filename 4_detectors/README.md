@@ -5,7 +5,7 @@ Detectors represent the actual implementation of a custom Lint rule. Detectors h
 
 ## Simple detectors
 
->####Definition
+>#### Definition
 > Simple detectors scan isolated artifacts of one type
 (e.g. just code or just resources). Scan and evaluation are performed in one phase.
 
@@ -46,7 +46,7 @@ In general, typical use cases for simple detectors are naming conventions or inv
 
 ## Advanced detectors
 
->####Definition
+>#### Definition
 > Advanced detectors scan related artifacts of different types.
 Scan and evaluation is performed in two phases.
 
