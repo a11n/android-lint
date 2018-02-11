@@ -7,11 +7,11 @@ Detectors represent the actual implementation of a custom Lint rule. Detectors h
 
 >####Definition
 > Simple detectors scan isolated artifacts of one type
-(e.g. just code or just resources). Scan and evaluation is performed in one phase.
+(e.g. just code or just resources). Scan and evaluation are performed in one phase.
 
-In order to elaborate the aforementioned definition of simple detectors a bit let's have a look at Android's `HardcodedValuesDetecor` [1], which is a good example for a simple detector. It's responsible for detecting hardcoded values, which means if you have defined values in your layouts or menus directly instead of referencing them from a dedicated `strings.xml` file.
+In order to elaborate the aforementioned definition of simple detectors a bit let's have a look at Android's `HardcodedValuesDetecor`, which is a good example of a simple detector. It's responsible for detecting hardcoded values, which means you have defined values in your layouts or menus directly instead of referencing them from a dedicated `strings.xml` file.
 
-In order to detect such flaws only layout or menu files are scanned. In each file all value-containing attributes, such as `text` or `hint`, are visited. Their values are evaluated and in case they are no references, for instance they don't start with `@`, an `Issue` (see section 2.4) is reported. This evaluation is performed during scan phase directly:
+In order to detect such flaws only layout or menu files are scanned. In each file all value-containing attributes, such as `text` or `hint`, are visited. Their values are evaluated and in case they are no references, for instance they don't start with `@`, an `Issue` (see section 2.4) is reported. This evaluation is performed during the scan phase directly:
 
 ```java
 public class HardcodedValuesDetector extends LayoutDetector {
@@ -42,7 +42,7 @@ public class HardcodedValuesDetector extends LayoutDetector {
 
 Other examples for simple detector are `SdCardDetector` [2] or `MissingIdDetector` [3].
 
-In general, typically use cases for simple detectors are naming conventions or invalid value detection.
+In general, typical use cases for simple detectors are naming conventions or invalid value detection.
 
 ## Advanced detectors
 

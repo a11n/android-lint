@@ -7,16 +7,16 @@ This section covers the core concepts of the Android Lint API. The subsequent se
 >####Definition
 >An `IssueRegistry` is a registry which provides a list of checks to be performed on an Android project.
 
-All checks* which should be considered during Lint analysis needs to be registered in an `IssueRegistry`. The built-in checks are registered within the `BuiltinIssueRegistry` class in the `com.android.tools.lint.checks` package.
+All checks* which should be considered during Lint analysis need to be registered in an `IssueRegistry`. The built-in checks are registered within the `BuiltinIssueRegistry` class in the `com.android.tools.lint.checks` package.
 
-In order to make custom Lint checks available for Lint analysis you need to subclass `IssueRegistry` an override its `getIssues` method which provides a `List` of `Issues`. Here is a straightforward example:
+In order to make custom Lint checks available for Lint analysis you need to subclass `IssueRegistry` and override its `getIssues` method which provides a `List` of `Issues`. Here is a straightforward example:
 
 ```java
 public class CustomIssueRegistry extends IssueRegistry {
   @Override
   public List<Issue> getIssues() {
     return Arrays.asList(             //Note:
-      MyCustomCheck.ISSUE,            //A check actually is a detector.
+      MyCustomCheck.ISSUE,            //A check is actually a detector.
       MyAdvancedCheck.AN_ISSUE,       //One detector can report
       MyAdvancedCheck.ANOTHER_ISSUE   //multiple types of issues.
     );
@@ -24,7 +24,7 @@ public class CustomIssueRegistry extends IssueRegistry {
 }
 ```
 
-Last but not least it is necessary to reference your `IssueRegistry` class within your `MANIFEST`, such that it can be found by Lint. For Gradle-based projects this could be achieved by:
+Last but not least, it is necessary to reference your `IssueRegistry` class within your `MANIFEST`, such that it can be found by Lint. For Gradle-based projects this could be achieved by:
 
 ```groovy
 jar {
@@ -47,9 +47,9 @@ The `Detector` class is the central element for the definition of Lint rules. Mo
 
 In order to write a custom Lint rule you will need to subclass `Detector`. For certain use cases the Lint API also provides specific `Detectors` for your convenience, such as `LayoutDetector` or `ResourceXmlDetector` - but they are in turn also sub-classes of `Detector`.
 
-Besides extending the `Detector` class you also need to implement a `Scanner` interface which defines how your `Detector` will scan the development artifacts! **By default the `Detector` class declares all methods of all available `Scanners` but you will notice that only the once of the implemented interface(s) will get called!**
+Besides extending the `Detector` class you also need to implement a `Scanner` interface which defines how your `Detector` will scan the development artifacts! **By default the `Detector` class declares all methods of all available `Scanners` but you will notice that only the ones of the implemented interface(s) will get called!**
 
-The different types of `Scanner` will be presented in the next section.
+The different types of `Scanners` will be presented in the next section.
 
 ## 2.3 Scanner
 
