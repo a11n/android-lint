@@ -13,23 +13,32 @@ This reference guide aims to fill this gap and provide essential knowledge on ho
 ## Structure
 The guide is structured into six consecutive sections.
 
-#### 1. Introduction
+#### 1. [Introduction](1_introduction)
 This section introduces into the domain of Android Lint. It briefly describes the purpose, usage and configuration of this tool.
 
-#### 2. Lint API basics
+#### 2. [Lint API basics](2_lint_api_basics)
 This section covers the basics of the Android Lint API. It explains the core concepts of the API, such as `Issues`, `Detectors`, `Scanners` and `IssueRegistry`.
 
-#### 3. Getting started
+#### 3. [Getting started](3_getting_started)
 After the elaboration of the Lint API theory in [section 1](1_introduction/) and [section 2](2_lint_api_basics/) this chapter provides practical explanations and code to get you started writing your own custom Android Lint rules.
 
-#### 4. Detectors
+#### 4. [Detectors](4_detectors)
 This section demonstrates how to cope with `Detectors`. It showcases simple as well as advanced detecting techniques.
 
-#### 5. Verification
+#### 5. [Verification](5_verification)
 This section presents how to test and debug custom Lint rules.
 
-#### 6. Application
+#### 6. [Application](6_application)
 This section elaborates options to apply your custom Android Lint rules to your Android application project.
+
+
+## Additional Resources
+If you are looking for more information on Lint the following resources can be helpful.
+
+1. [Android Docs on Lint](https://developer.android.com/studio/write/lint.html): Covers how to configure lint
+2. [Android's Conceptual Overview of Lint](http://tools.android.com/tips/lint/writing-a-lint-check): Covers the concepts of writing android lint rules.
+3. [A Presentation on Lint with Android](https://academy.realm.io/posts/360andev-matthew-compton-linty-fresh-java-android/): Presents is the same information as this guide, in video format.
+4. [Writing Lint Rules with Annotations](https://android.jlelse.eu/writing-custom-lint-rules-and-integrating-them-with-android-studio-inspections-or-carefulnow-c54d72f00d30): Walks you through writing a lint rule that enforces an annotation.
 
 ## Contributing
 Contribution to this guide is appreciated. Please refer to the [contribution guidelines](CONTRIBUTING.md) if you want to contribute something.
